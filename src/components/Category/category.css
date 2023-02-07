@@ -1,0 +1,13 @@
+.wrapper {
+    width: 1600px;
+    margin: auto;
+}
+
+.navbar {
+    text-align: center;
+}
+
+.navbar-img {
+    width: 450px;
+    height: 100px;
+}

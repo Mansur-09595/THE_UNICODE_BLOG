@@ -2,6 +2,7 @@ import { useParams } from "react-router-dom";
 import React, { useEffect } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { fetchData_Posts } from '../Actions/actions'
+import Post from "./Post";
 
 const Posts = () => {
   const dispatch = useDispatch();
@@ -21,9 +22,9 @@ const Posts = () => {
   }
   return (
     <ul>
-      {data_posts.filter((item)=> item.categoryId === id).map((item) => { 
-        return <li key={item._id}>{item.title}</li>;
-      })}
+      {data_posts.filter((item)=> item.categoryId === id).map((item) => (
+        <Post item={item}/>
+      ))}
     </ul>
   );
 };

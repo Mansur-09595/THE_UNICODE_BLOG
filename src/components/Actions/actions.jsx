@@ -17,7 +17,8 @@ const fetchData_Posts = (categoryId) => {
     try {
       const res = await fetch(`https://unicode-blog.onrender.com/posts?categoryId=${categoryId}`);
       const data = await res.json();
-      dispatch({ type: "FETCH_DATA_POSTS_SUCCESS", payload: data });
+      const randomPosts = data.sort(() => Math.random() - 0.5);
+      dispatch({ type: "FETCH_DATA_POSTS_SUCCESS", payload: randomPosts });
     } catch (error) {
       dispatch({ type: "FETCH_DATA_POSTS_ERROR", payload: error });
     }
