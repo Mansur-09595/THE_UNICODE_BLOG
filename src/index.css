@@ -7,10 +7,18 @@ body {
   -moz-osx-font-smoothing: grayscale;
 
   background-size: cover;
+  box-sizing: border-box;
   background-repeat: no-repeat;
+  font-family: 'Open Sans', sans-serif;
+  background: #d6d4d4;
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+p {
+  margin: 0;
+  padding: 0;
 }

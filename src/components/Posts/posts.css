@@ -1,0 +1,21 @@
+.blocks-category {
+    display: flex;
+    margin: auto;
+    justify-content: center;
+}
+
+.h2-flex {
+    display: flex;
+    margin: auto;
+    width: 1250px;
+    justify-content: space-between;
+}
+
+.items-blocks {
+    display: flex;
+}
+
+.item-img, .recomend-img {
+    width: 495px;
+    height: 330px;
+}

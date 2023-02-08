@@ -1,6 +1,7 @@
 import React from 'react';
 import { useSelector } from "react-redux";
 import { useParams } from "react-router-dom";
+import './posts.css'
 
 const AboutPost = () => {
   const {id} = useParams()
@@ -9,7 +10,7 @@ const AboutPost = () => {
 
   return (
     <ul>
-      <img src={`https://unicode-blog.onrender.com/${selectedPost.image.sm}`} alt={selectedPost.title} />
+      <img src={selectedPost.image} alt={selectedPost.title} />
       <li>{selectedPost.title}</li>
       <li>{selectedPost.text}</li>
     </ul>

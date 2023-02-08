@@ -1,14 +1,15 @@
 import React from 'react';
-import { Route, Routes, useLocation } from 'react-router-dom';
+import { Route, Routes } from 'react-router-dom';
 import './App.css';
 import Category from './components/Category/Category';
 import Posts from './components/Posts/Posts';
 import AboutPost from './components/Posts/AboutPost';
+import Navbar from './components/Navbar/Navbar';
 
 function App() {
-  const location = useLocation(); 
   return (
     <div className="App">
+      <Navbar />
       <Routes>
         <Route path='/' 
         element={<Category />}/>
