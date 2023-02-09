@@ -1,0 +1,26 @@
+.about-post-blocks {
+  margin: auto;
+  text-align: center;
+}
+
+.about-post-img {
+  margin-top: 64px;
+  width: 1213px;
+  height: 809px;
+}
+
+.about-post-title {
+  font-weight: 700;
+  font-size: 60px;
+  line-height: 82px;
+}
+
+.about-post-text {
+  margin: auto;
+  margin-top: 36px;
+  margin-bottom: 101px;
+  width: 1360px;
+  min-height: 445px;
+  font-size: 40px;
+  line-height: 54px;
+}

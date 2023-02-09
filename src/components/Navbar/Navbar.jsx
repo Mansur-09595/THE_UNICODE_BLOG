@@ -1,12 +1,18 @@
-import React from "react";
-import { useSelector } from 'react-redux';
-import { Link } from "react-router-dom";
+import React, { useEffect } from "react";
+import { useDispatch, useSelector } from 'react-redux';
+import { NavLink, Link } from "react-router-dom";
 import { ThreeCircles } from "react-loader-spinner";
 import navbar from "../images/logo.png";
+import { fetchData_Category } from "../Actions/actions";
 import '../Category/category.css'
 
 const Navbar = () => {
+  const dispatch = useDispatch();
   const { data_category, isLoading, error } = useSelector((state) => state);
+
+  useEffect(() => {
+    dispatch(fetchData_Category());
+  }, [dispatch]);
   
   if (isLoading) {
     return (
@@ -30,6 +36,7 @@ const Navbar = () => {
   if (error) {
     return <div>{error}</div>;
   }
+
   return (
     <>
       <div className="navbar">
@@ -39,11 +46,11 @@ const Navbar = () => {
       </div>
       <div className="categories">
         {data_category.map((item) => (
-          <Link to={`/categories/${item._id}`}>
-            <p className="category" key={item.id}>
+          <NavLink to={`/categories/${item._id}`}>
+            <a className="category" key={item.id}>
               {item.title}
-            </p>
-          </Link>
+            </a>
+          </NavLink>
         ))}
       </div>
       <hr class="hr-line" />

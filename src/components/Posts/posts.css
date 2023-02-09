@@ -1,21 +1,139 @@
-.blocks-category {
-    display: flex;
-    margin: auto;
-    justify-content: center;
+h2 {
+  margin: 0;
+  padding: 0;
 }
 
-.h2-flex {
-    display: flex;
-    margin: auto;
-    width: 1250px;
-    justify-content: space-between;
+.blocks-category {
+  margin: auto;
+  margin-bottom: 35px;
+  display: flex;
+  justify-content: space-between;
+  width: 1450px;
+}
+
+.titles {
+  margin: auto;
+  margin-top: 35px;
+  margin-bottom: 35px;
+  display: flex;
+  width: 1310px;
+  justify-content: space-between;
+}
+
+.categorny-title {
+  font-weight: 700;
+  font-size: 60px;
+  line-height: 82px;
+}
+
+.recomend-title {
+  width: 380px;
+  min-height: 79px;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 54px;
 }
 
 .items-blocks {
-    display: flex;
+  display: flex;
 }
 
-.item-img, .recomend-img {
-    width: 495px;
-    height: 330px;
+.item-img,
+.recomend-img {
+  border-radius: 15px;
+  width: 495px;
+  height: 330px;
+}
+
+.item-info {
+  margin-left: 10px;
+}
+
+.item-title {
+  margin-bottom: 18px;
+  min-width: 139px;
+  min-height: 47px;
+  font-weight: 700;
+  font-size: 35px;
+  line-height: 48px;
+}
+
+.item-text {
+  width: 291px;
+  min-height: 242px;
+  font-size: 20px;
+  line-height: 27px;
+}
+
+.hr-line-items {
+  margin: 45px 0 45px 0;
+  padding: 0;
+  height: 0;
+  border: none;
+  border-top: 2px solid #333;
+}
+
+.recomend-untitle {
+  text-align: center;
+  min-width: 139px;
+  min-height: 47px;
+  font-weight: 700;
+  font-size: 35px;
+  line-height: 48px;
+}
+
+.recomend-text {
+  width: 486px;
+  min-height: 167px;
+  font-size: 20px;
+  line-height: 27px;
+}
+
+.recomend_footer-h2 {
+  margin: auto;
+  margin-bottom: 45px;
+  width: 718px;
+  height: 71px;
+  font-weight: 700;
+  font-size: 53px;
+  line-height: 68px;
+}
+
+.recomend_footer-blocks {
+  margin: auto;
+  margin-bottom: 60px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 25px;
+  width: 1535px;
+  height: 692px;
+}
+
+.recomend_footer-title {
+  text-align: center;
+  font-weight: 700;
+  font-size: 35px;
+  line-height: 48px;
+}
+
+.recomend_footer-img {
+  width: 495px;
+  background-position: center;
+  background-size: cover;
+  border-radius: 15px;
+  background-repeat: no-repeat;
+  height: 330px;
+}
+
+.recomend_footers-padding {
+  padding: 15px;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+.active {
+  color: #9f0013;
 }
