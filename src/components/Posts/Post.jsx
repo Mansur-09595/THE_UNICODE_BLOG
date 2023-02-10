@@ -15,7 +15,7 @@ const Post = ({ item }) => {
         <img className="item-img" src={item.image} alt={item.title} />
       </Link>
         <div className='item-info'>
-          <p className='item-title' key={item._id}>{item.title.length > 13 ? `${item.title.substring(0, 13)}...` : item.title}</p>
+          <p className='item-title' key={item._id}>{item.title}</p>
           <p className='item-text'> 
             {expanded ? item.text : item.text.slice(0, 180) + "..."}
             {!expanded && (

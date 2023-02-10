@@ -51,7 +51,7 @@ h2 {
 
 .item-title {
   margin-bottom: 18px;
-  min-width: 139px;
+  max-width: 330px;
   min-height: 47px;
   font-weight: 700;
   font-size: 35px;

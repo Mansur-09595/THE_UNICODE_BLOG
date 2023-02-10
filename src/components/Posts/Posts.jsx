@@ -2,7 +2,6 @@ import { useParams } from "react-router-dom";
 import { ThreeCircles } from "react-loader-spinner";
 import React, { useEffect } from "react";
 import { useDispatch, useSelector } from "react-redux";
-import { Link } from "react-router-dom";
 import { fetchData_Posts } from "../Actions/actions";
 import Post from "./Post";
 import "./posts.css";
@@ -26,7 +25,7 @@ const Posts = () => {
   if (isLoading_posts) {
     return (
       <div>
-        <ThreeCircles
+        <ThreeCircles 
           height="100"
           width="100"
           color="#4fa94d"

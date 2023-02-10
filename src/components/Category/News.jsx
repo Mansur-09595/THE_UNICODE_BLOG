@@ -14,9 +14,7 @@ const News = ({ news }) => {
         <img className="news-img" src={news.image} alt={news.title} />
       </Link>
       <p className="news-title" key={news.id}>
-        {news.title.length > 13
-          ? `${news.title.substring(0, 13)}...`
-          : news.title}
+        {news.title}
       </p>
       <p className="news-text">
         {expanded ? news.text : news.text.slice(0, 16) + "..."}

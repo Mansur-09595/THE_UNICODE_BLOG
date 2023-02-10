@@ -1,5 +1,5 @@
 .wrapper {
-  width: 1600px;
+  max-width: 1600px;
   margin: auto;
 }
 
@@ -93,4 +93,11 @@ a {
   font-weight: 700;
   font-size: 54px;
   line-height: 68px;
+}
+
+.ThreeCircles {
+  position: fixed;
+  margin: auto;
+  justify-content: center;
+  text-align: center;
 }

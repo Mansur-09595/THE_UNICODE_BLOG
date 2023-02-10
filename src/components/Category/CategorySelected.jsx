@@ -12,7 +12,7 @@ const CategorySelected = ({post, data_posts}) => {
       <div className="post-img" src={post.image} alt={post.title} style={{ backgroundImage: `url(${post.image})` }} >
         <div className="posts-padding">
           <p className="post-title" key={post.id}>
-            {post.title.length > 13 ? `${post.title.substring(0, 13)}...` : post.title}
+            {post.title}
           </p>
           <p className="post-text"> 
             {post.text.length > 13 ? `${post.text.substring(0, 13)}...` : post.text}
